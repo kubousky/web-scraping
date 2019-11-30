@@ -31,11 +31,11 @@ for tr in datadiv.findAll("tr"):
     row+=1
 
 df = pd.DataFrame(data=elementsfull)
-print('')
+
 print('DataFrame info:')
-print('')
+
 print(df.info(verbose=False))
-print('')
+
 
 """
 Data cleaning
@@ -72,6 +72,5 @@ df_2.sort_values("growth", axis = 0, ascending = True, inplace = True, na_positi
 df_3 = df_2.tail(10)
 df_3.name = 'Countries where life expectancy grew exponentially (1990-2013)'
 print(df_3.name)
-print('')
+
 print(df_3)
-print('')
